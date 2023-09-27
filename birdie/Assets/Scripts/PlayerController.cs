@@ -10,11 +10,11 @@ public class PlayerController : MonoBehaviour
 
     private void Start()
     {
-        _mainCamera = Camera.main.transform;
-        _rig = GetComponent<Rigidbody>();
-        _rig.useGravity = false;
-        Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
+        _rig = GetComponent<Rigidbody>();
+        _mainCamera = Camera.main.transform;
+        _rig.useGravity = false;
     }
       
     private void Update()
